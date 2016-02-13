@@ -7,6 +7,7 @@ prvs = cv2.cvtColor(frame1,cv2.COLOR_BGR2GRAY)
 hsv = np.zeros_like(frame1)
 hsv[...,1] = 255
 
+
 while(1):
     ret, frame2 = cap.read()
     if frame2==None:
