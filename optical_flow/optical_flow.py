@@ -1,7 +1,7 @@
 import numpy as np
 import cv2
  
-cap = cv2.VideoCapture('skating.mp4')
+cap = cv2.VideoCapture(0)
 
 # params for ShiTomasi corner detection
 feature_params = dict( maxCorners = 100,
