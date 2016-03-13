@@ -23,10 +23,11 @@ while(1):
     hsv[...,0] = ang*180/np.pi/2
     hsv[...,2] = cv2.normalize(mag,None,0,255,cv2.NORM_MINMAX)
     bgr = cv2.cvtColor(hsv,cv2.COLOR_HSV2BGR)
-    count+=1
-    print count
 
     cv2.imshow('frame2',bgr)
+
+    count+=1
+    print count
     k = cv2.waitKey(2) & 0xff
     if k == 27:
         break

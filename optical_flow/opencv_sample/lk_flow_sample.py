@@ -1,3 +1,5 @@
+# path = '/home/ashar/opencv_files/FiddlingInOpenCV/optical_flow/j.avi'
+
 from __future__ import print_function
 
 import numpy as np
