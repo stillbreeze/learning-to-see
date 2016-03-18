@@ -25,7 +25,7 @@ def affinityMatrix(img,r):
 	weight_matrix=weight_matrix.astype("float16",copy=False)
 	# (means, stds)=cv2.meanStdDev(img)	
 	# sigmaI=2*(pow(stds[0][0],2)+pow(stds[1][0],2)+pow(stds[2][0],2))
-	sigmaI=500
+	sigmaI=5
 	sigmaS=4
 	for i in xrange(row):
 		for j in xrange(col):
@@ -36,7 +36,7 @@ def affinityMatrix(img,r):
 
 if __name__ == "__main__":
 	img=cv2.imread('./colors.jpg',3)
-	img=cv2.resize(img,(150,150))
+	img=cv2.resize(img,(50,50))
 	r=2.5
 	affinityMatrix(img,r)
 	cv2.waitKey(0)
