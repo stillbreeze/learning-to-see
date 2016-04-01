@@ -4,7 +4,6 @@ import numpy as np
 from math import sqrt, pow, exp
 from scipy.sparse import linalg
 import h5py
-import gc
 
 if __name__ == "__main__":
 	with h5py.File('weight_matrix.h5', 'r') as hf:
